@@ -11,7 +11,7 @@ const app = express();
 app.use(express.urlencoded());
 app.use(express.json());
 app.use(cors({
-    origin: 'https://protoflio-theta.vercel.app/',
+    origin: 'https://threejs-react-bucatti-protolio.vercel.app',
   }));
 
 app.get('/api/get',async(req,res)=>{
