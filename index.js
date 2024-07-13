@@ -10,8 +10,9 @@ const port = process.env.PORT ||3000;
 const app = express();
 app.use(express.urlencoded());
 app.use(express.json());
-app.use(cors());
-
+app.use(cors({
+    origin: 'https://protoflio-theta.vercel.app/',
+  }));
 
 app.get('/api/get',async(req,res)=>{
 
