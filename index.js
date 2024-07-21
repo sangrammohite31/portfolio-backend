@@ -11,7 +11,7 @@ const app = express();
 app.use(express.urlencoded());
 app.use(express.json());
 app.use(cors({
-    origin: 'https://sangram-portfolio.vercel.app',
+    origin: '*',
   }));
 
 app.get('/api/get',async(req,res)=>{
